@@ -48,7 +48,7 @@ function draw() {
   sc = second();
 
   angleMode(DEGREES);
-  hrAngle = map(hr, 0, 60, -90, 270);
+  hrAngle = map(hr % 12, 0, 12, -90, 270);
   mnAngle = map(mn, 0, 60, -90, 270);
   scAngle = map(sc, 0, 60, -90, 270);
 
